@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "456a8c49-3590-4fe8-8409-732edafe7d64",
+		"name": "Baackend-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32175892"
+	},
+	"item": [
+		{
+			"name": "User Registeration API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Isha kankrecha\",\r\n    \"email\": \"isha@gmail.com\",\r\n    \"password\": \"securepassword123\"\r\n}"
+				},
+				"url": {
+					"raw": "https://backend-demo-dzrr.onrender.com/api/register",
+					"protocol": "https",
+					"host": [
+						"backend-demo-dzrr",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Use Login Api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"isha@gmail.com\",\n    \"password\": \"securepassword123\"\n}"
+				},
+				"url": {
+					"raw": "https://backend-demo-dzrr.onrender.com/api/login",
+					"protocol": "https",
+					"host": [
+						"backend-demo-dzrr",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Get Proefile API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjYzN2ZhMjJkZTBjNzY0OTY2MmY4ZiIsImVtYWlsIjoiaXNoYUBnbWFpbC5jb20iLCJpYXQiOjE3NDczMzUxNzMsImV4cCI6MTc0NzMzODc3M30.tKBL7-bCgZxfbO6TT4gKhqKf4DfWZdDx5L-Q9T5gEvQ"
+					}
+				],
+				"url": {
+					"raw": "https://backend-demo-dzrr.onrender.com/api/profile",
+					"protocol": "https",
+					"host": [
+						"backend-demo-dzrr",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
